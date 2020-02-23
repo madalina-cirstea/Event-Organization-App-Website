@@ -1,0 +1,21 @@
+<div class="contact_form">
+    <h2><%= title %></h2>
+    <form action="/login" method="POST">
+        <div>
+            <p>Username</p>
+            <br>
+            <input type="text" id="username" name="username" placeholder="username" required>
+        </div>
+        <div>
+            <br>
+            <p>Password</p>
+            <br>
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+        <br>
+        <button id="submit" type="submit">Login</button>
+    </form>
+    <br>
+    <p><input type="checkbox">Need an account?<p>
+    <a id="register" href="/register"> Register<a>
+</div>

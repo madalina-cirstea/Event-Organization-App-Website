@@ -1,0 +1,26 @@
+<div class="contact_form">
+    <h2><%= title %></h2>
+    <form action="/register" method="POST">
+        <div>
+            <p>Username</p>
+            <br> 
+            <input type="text" id="username" name="username" placeholder="username" required>
+        </div>
+        <div>
+            <br>
+            <p>Email</p>
+            <br>            
+            <input type="email" id="email" name="email" placeholder="username@email" required>
+        </div>
+        <div>
+            <br>
+            <p>Password</p>
+            <br> 
+            <input type="password" id="password" name="password" placeholder="password" required>
+        </div>
+        <br>
+        <button id="terms">Unibuc FMI Course</button>
+        <br>
+        <button id="submit" type="submit">Register</button>
+    </form>
+<div>

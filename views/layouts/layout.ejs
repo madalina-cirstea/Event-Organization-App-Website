@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/<%= style%>">
+    <script src="about.js"></script>
+    <% if (scriptJs == 'plan.js') { %>
+        <script src="plan.js"></script>
+    <% } %>
+    <% if (scriptJs == 'video.js') { %>
+        <script src="video.js"></script>
+    <% } %>
+    <% if (scriptJs == 'contact.js') { %>
+        <script src="contact.js"></script>
+    <% } %>
+    <% if (scriptJs == 'register.js') { %>
+        <script src="register.js"></script>
+    <% } %>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>eveorg.ro</title>
+</head>
+
+<body>
+    <% if (style != '404.css' && style != 'login.css') { %>
+    <aside id="logout">
+        <h1>hey you</h1>
+        <form action="/logout" method="POST">
+            <button type="submit">Log out</button>
+        </form>
+    </aside>
+    <% } %>
+
+    <% if (style == 'style.css') { %>
+    <%- include('../partials/header.ejs') %>
+    <%- include('../partials/dropdownMenu.ejs') %>
+    <% } %>
+    <%- body %>
+    <% if (style == 'style.css') { %>
+    <%- include('../partials/footer.ejs') %>
+    <% } %>
+
+</body>
+</html>
