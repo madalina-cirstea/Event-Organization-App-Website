@@ -5,8 +5,10 @@ Website for an event organization app built as a project for Web Techniques Univ
 
 
 ## Tools
-* NodeJS + Express (for web server)
+* HTML and CSS
 * Javascript
-* MongoDB for database
-* Heroku for hosting the website
-* eJS for templates
+* eJS - for templates
+* NodeJS and Express - for building the web server
+* MongoDB - for local database
+* MongoDB Atlas - for the global cloud database service used on Heroku
+* Heroku - for the hosting and deployment of the website
