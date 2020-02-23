@@ -12,3 +12,6 @@ Website for an event organization app built as a project for Web Techniques Univ
 * MongoDB - for local database
 * MongoDB Atlas - for the global cloud database service used on Heroku
 * Heroku - for the hosting and deployment of the website
+
+## Link
+[https://event-organization-app-project.herokuapp.com/login](https://event-organization-app-project.herokuapp.com/login)
